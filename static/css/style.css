@@ -1,0 +1,332 @@
+/* Static CSS File - style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.posts ul li {
+    margin: 10px 0;
+}
+
+.posts ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.posts ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Static CSS File - style.css */
+
+.about-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.about-section h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 22px;
+    color: #555;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-section p:first-of-type {
+    margin-top: 10px;
+}
+
+.about-section p:last-of-type {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* Static CSS File - style.css */
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.contact-section h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-section .form-group textarea {
+    resize: vertical;
+}
+
+.contact-section button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+/* Static CSS File - style.css */
+
+.login-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.login-section h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.login-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-section .form-group {
+    margin-bottom: 20px;
+}
+
+.login-section .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-section button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.login-section button:hover {
+    background-color: #0056b3;
+}
+
+.login-section p a {
+    color: #007BFF;
+}
+
+.login-section p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* Static CSS File - style.css */
+
+.signup-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.signup-section h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.signup-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.signup-section .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-section .form-group label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.signup-section .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-section button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-section button:hover {
+    background-color: #0056b3;
+}
+
+.signup-section p a {
+    color: #007BFF;
+}
+
+.signup-section p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
