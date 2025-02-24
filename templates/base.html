@@ -19,7 +19,7 @@
                     <li><a href="/">Logout</a></li>
                     <li><a href="/">Profile</a></li>
                 {% else %}
-                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'user_login' %}">Login</a></li>
                     <li><a href="{% url 'register' %}">Sign Up</a></li>
                 {% endif %}
             </ul>
