@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ post.title }} - Personal Blog{% endblock %}
+
+{% block content %}
+    <div class="blog-detail">
+        <h1>{{ post.title }}</h1>
+        <p class="blog-meta">
+            <strong>By:</strong> {{ post.author }} | 
+            <strong>Category:</strong> {{ post.category }} | 
+            <strong>Published:</strong> {{ post.created_at|date:"F d, Y" }}
+        </p>
+        <p>{{ post.content }}</p>
+
+        <hr>
+        <h2>Comments</h2>
+        <ul>
+            {% for comment in post.comments.all %}
+                <li><strong>{{ comment.author }}</strong>: {{ comment.content }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Add a Comment</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <textarea name="comment" placeholder="Write your comment..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock %}
