@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login as auth_login  
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
 
 def register(request):
     if request.method == 'POST':
@@ -42,3 +42,8 @@ def user_login(request):  # ✅ Renamed function
             return render(request, 'users/login.html', {'error': 'Invalid credentials'})
 
     return render(request, 'users/login.html')
+
+
+def user_logout(request):
+    auth_logout(request)  # ✅ Logs out the user
+    return redirect('user_login')  # Redirects to login page after logout

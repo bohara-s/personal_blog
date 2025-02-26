@@ -13,11 +13,12 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
                 
                 {% if user.is_authenticated %}
-                    <li><a href="/">Logout</a></li>
-                    <li><a href="/">Profile</a></li>
+               
+                {% comment %} <li><a href="{% url 'blog_list' %}">Blog</a></li> {% endcomment %}
+                <li><a href="{% url 'user_logout' %}">Logout</a></li>
+                <li><a href="http://127.0.0.1:8000/admin/">Admin</a></li>
                 {% else %}
                     <li><a href="{% url 'user_login' %}">Login</a></li>
                     <li><a href="{% url 'register' %}">Sign Up</a></li>

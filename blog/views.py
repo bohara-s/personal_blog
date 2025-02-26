@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from .models import BlogPost, Comment
+from django.contrib.auth.decorators import login_required
+
 
 # List all blog posts
 def blog_list(request):
